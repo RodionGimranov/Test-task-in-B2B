@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+body {
+    width: 100%;
+    height: auto;
+
+    overflow-x: hidden;
+
+    font-family: 'Roboto', 'Crimson Text', serif;
+    background-color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Section "Main"*/
+.main-section {
+    width: 100%;
+    height: 1596px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-image: url('img/main_screen-BG.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    background: linear-gradient(180deg, #FFFBEF 0%, #FFFBEF 81.56%, rgba(255, 255, 255, 0.00) 100%);
+}
+
+/*Header*/
+.header {
+    width: 1504px;
+    height: 61px;
+
+    margin-top: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.header-title {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #1E1E1F;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-address, .mail-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-email {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #776053;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-email:hover {
+    color: #000;
+}
+
+.header-phone-1, .header-phone-2 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 18px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-phone-1:hover, .header-phone-2:hover {
+    color: #000;
+}
+
+.phone-description-1, .phone-description-2 {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header-callback-button {
+    display: inline-block;
+    padding: 18px 32px;
+
+    border-radius: 50px;
+    border: 1px solid #3C2C26;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #000;
+    font-family: 'Crimson Text', serif;
+}
+
+.header-callback-button:hover {
+    background-color: #33333363;
+}
+
+/*Section "Hero"*/
+.hero-section {
+    width: 1771px;
+    height: auto;
+    margin-left: 260px;
+    margin-top: 51px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.hero-text-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 50px;
+    animation: slideInFromLeft 1.3s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.title-hero {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    color: #3C2C26;
+
+    font-family: 'Crimson Text', serif;
+}
+
+.big-title-hero {
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 72px;
+    color: #3C2C26;
+
+    font-family: 'Crimson Text', serif;
+}
+
+.hero-subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 40px;
+    color: #333;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-block {
+    width: auto;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+}
+
+.view-catalog-button {
+    display: inline-block;
+    padding: 18px 32px;
+
+    background-color: #776053;
+    border-radius: 50px;
+
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: normal;
+    color: #000;
+    font-family: 'Crimson Text', serif;
+}
+
+.view-catalog-button:hover {
+    background-color: #917464;
+}
+
+.custom-made-block-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.info_icon {
+    width: 33px;
+    height: 33px;
+}
+
+.custom-made-text, .link-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    color: #333;
+
+    font-family: 'Crimson Text', serif;
+}
+
+.link-text {
+    color: #776053;
+    text-decoration: underline;
+}
+
+.hero-image-container {
+    position: relative;
+    width: 1035px;
+    height: 762px;
+
+    background-image: url('./img/hero-home.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideInFromRight 1.3s ease-out forwards;
+}
+
+@keyframes slideInFromRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+.custom-made-block-2 {
+    position: relative;
+    top: 617px;
+    left: 598px;
+    width: 442px;
+    height: 125px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    border-radius: 70px 0px 0px 0px;
+    background-color: #FFF9E8;
+}
+
+.date-info {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #000;
+
+    font-family: 'Crimson Text', serif;
+}
+
+/*Section "About"*/
+.about-section {
+    position: relative;
+    width: 1504px;
+    height: 490px;
+    margin-top: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-about-1, .card-about-2, .card-about-3, .card-about-4 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 352px;
+    height: 490px;
+
+    display: flex;
+    flex-direction: row;
+    filter: drop-shadow(30px 10px 40px rgba(60, 44, 38, 0.15));
+
+    transition: 0.5s;
+}
+
+.card-about-1:hover, .card-about-2:hover, .card-about-3:hover, .card-about-4:hover {
+    margin-top: -50px;
+}
+
+.left-part {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+
+    border-radius: 0px 42px 42px 0px;
+    background-color: #fff;
+}
+
+.right-part {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+
+    border-radius: 42px 0px 0px 42px;
+    background-color: #fff;
+}
+
+.content-card-about {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    margin-top: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+}
+
+.image-card-about {
+    width: 260px;
+    height: 260px;
+}
+
+.description-card-about {
+    width: 289px;
+    height: 103px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    color: #333
+}
+
+/*Section "Gallery"*/
+.gallery-section {
+    position: relative;
+    width: 1656px;
+    height: 624px;
+
+    margin-top: 67px;
+    margin-bottom: 100px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 77px;
+}
+
+.line {
+    position: absolute;
+    top: -350px;
+    left: -192px;
+    width: 1996.084px;
+    height: 589.891px;
+    transform: rotate(4deg);
+    stroke-width: 1px;
+    stroke: #CCC;
+}
+
+.gallety-text-container {
+    width: 480px;
+    height: 321px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.gallery-section-text {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 52px;
+    color: #3C2C26;
+    text-align: right;
+    font-family: 'Crimson Text', serif;
+}
+
+.slider-block {
+    width: 219px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.left-arrow:active, .right-arrow:active {
+    transform: scale(0.95);
+}
+
+.list-number {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.first-number {
+    font-size: 56px;
+    color: #3C2C26;
+    font-weight: 400;
+    line-height: 50px;
+    font-family: 'Crimson Text', serif;
+}
+
+.other-numbers {
+    font-size: 20px;
+    color: #776053;
+    font-weight: 400;
+    line-height: 18px;
+    font-family: 'Crimson Text', serif;
+}
+
+.gallery-image-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.image-gallery-1, .image-gallery-2, .image-gallery-3 {
+    filter: drop-shadow(30px 20px 40px rgba(119, 96, 83, 0.25));
+}
